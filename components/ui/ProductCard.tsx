@@ -20,59 +20,79 @@ export function ProductCard({ product }: { product: Product }) {
   const visual = productVisuals[product.name] ?? "🛍️";
 
   return (
-    <article className="soft-card group min-w-[220px] flex-1 overflow-hidden rounded-[24px] p-2.5 transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+    <article className="group relative overflow-hidden rounded-[26px] border border-[#efdfd5] bg-white p-2.5 shadow-[0_10px_35px_rgba(90,60,45,0.06)] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_20px_45px_rgba(90,60,45,0.11)]">
 
-      <div className="relative flex aspect-square items-center justify-center overflow-hidden rounded-[19px] bg-gradient-to-br from-[#fff6ef] to-[#f4dccc]">
+      {/* Product image */}
+      <div className="relative aspect-[0.92] overflow-hidden rounded-[20px] bg-gradient-to-br from-[#fff8f1] to-[#f3dfd2]">
 
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.8),transparent_55%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.9),transparent_60%)]" />
 
-        <span className="relative z-10 text-[90px] drop-shadow-xl transition duration-500 group-hover:scale-110">
-          {visual}
-        </span>
+        <div className="relative grid h-full place-items-center">
+          <span className="text-[92px] drop-shadow-lg transition-transform duration-500 group-hover:scale-110">
+            {visual}
+          </span>
+        </div>
 
-        <span className="absolute right-2 top-2 rounded-full bg-[#f21f73] px-2.5 py-1 text-[11px] font-bold text-white">
+        {/* Badge */}
+        <span className="absolute right-3 top-3 rounded-full bg-[#f21f73] px-3 py-1.5 text-[10px] font-black text-white shadow-sm">
           {product.badge}
         </span>
 
+        {/* Favorite */}
         <button
-          aria-label="افزودن به علاقه‌مندی‌ها"
-          className="absolute bottom-2 left-2 grid h-9 w-9 place-items-center rounded-full bg-white/90 text-lg shadow transition hover:scale-110"
+          type="button"
+          aria-label={`افزودن ${product.name} به علاقه‌مندی‌ها`}
+          className="absolute left-3 top-3 grid h-10 w-10 place-items-center rounded-full bg-white/90 text-xl shadow-sm backdrop-blur transition hover:scale-110 hover:text-[#f21f73]"
         >
           ♡
         </button>
       </div>
 
-      <div className="px-1.5 pb-3 pt-3">
+      {/* Content */}
+      <div className="px-1.5 pb-1.5 pt-4">
 
-        <h3 className="font-bold">
-          {product.name}
-        </h3>
+        <div className="flex items-start justify-between gap-3">
+          <div>
+            <h3 className="text-sm font-black text-[#17263a]">
+              {product.name}
+            </h3>
 
-        <p className="mt-1 text-xs text-slate-500">
-          {product.category}
-        </p>
+            <p className="mt-1 text-[11px] text-slate-500">
+              {product.category}
+            </p>
+          </div>
 
+          <div className="shrink-0 rounded-full bg-[#fff3cf] px-2 py-1 text-[10px] font-bold text-[#b77a00]">
+            ★ ۴.۸
+          </div>
+        </div>
+
+        {/* Price */}
         <div className="mt-4 flex items-end justify-between gap-2">
 
           <div>
-            <div className="text-base font-black">
+            <div className="text-base font-black text-[#17263a]">
               {product.price}
-              <span className="mr-1 text-xs font-medium">
+              <span className="mr-1 text-[10px] font-medium text-slate-500">
                 تومان
               </span>
             </div>
 
             {product.oldPrice && (
-              <div className="mt-1 text-xs text-slate-400 line-through">
+              <div className="mt-1 text-[10px] text-slate-400 line-through">
                 {product.oldPrice} تومان
               </div>
             )}
           </div>
 
-          <div className="text-xs text-amber-500">
-            ★ ۴.۸
-          </div>
-
+          {/* Add to cart */}
+          <button
+            type="button"
+            aria-label={`افزودن ${product.name} به سبد خرید`}
+            className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-[#17263a] text-base text-white transition hover:scale-105 hover:bg-[#f21f73]"
+          >
+            +
+          </button>
         </div>
       </div>
     </article>
