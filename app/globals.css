@@ -1,26 +1,58 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --navy: #17263a;
+  --pink: #f21f73;
+  --cream: #fffaf5;
+  --peach: #fce5d8;
+  --border: #f0ddd0;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 10% 10%, rgba(242, 31, 115, 0.035), transparent 25%),
+    radial-gradient(circle at 90% 30%, rgba(244, 180, 140, 0.09), transparent 28%),
+    var(--cream);
+  color: var(--navy);
+  font-family: Tahoma, Arial, "Segoe UI", sans-serif;
+}
+
+button,
+a,
+input {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.container-shop {
+  width: min(1280px, calc(100% - 40px));
+  margin-inline: auto;
+}
+
+.soft-card {
+  border: 1px solid var(--border);
+  background: linear-gradient(145deg, #fffefa, #fff2e9);
+  box-shadow: 0 12px 35px rgba(190, 120, 88, 0.08);
+}
+
+.scrollbar-hide {
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
