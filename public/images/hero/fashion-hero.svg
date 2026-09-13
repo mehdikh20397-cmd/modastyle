@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700">
+<defs><linearGradient id="bg" x1="0" x2="1"><stop stop-color="#efb28f"/><stop offset=".44" stop-color="#f6d3c0"/><stop offset="1" stop-color="#fff0e6"/></linearGradient><linearGradient id="coat1" x1="0" x2="1"><stop stop-color="#17263a"/><stop offset="1" stop-color="#2e4667"/></linearGradient><linearGradient id="coat2" x1="0" x2="1"><stop stop-color="#ee7299"/><stop offset="1" stop-color="#c9517c"/></linearGradient></defs>
+<rect width="1600" height="700" rx="52" fill="url(#bg)"/>
+<circle cx="1310" cy="130" r="150" fill="#fff" opacity=".23"/>
+<circle cx="1070" cy="620" r="190" fill="#f21f73" opacity=".07"/>
+<ellipse cx="365" cy="662" rx="290" ry="30" fill="#b98770" opacity=".22"/>
+<rect x="85" y="285" width="385" height="380" rx="90" fill="url(#coat1)"/>
+<circle cx="280" cy="220" r="112" fill="#d99d79"/>
+<path d="M170 172c64-64 164-55 224-5l-15 50H179z" fill="#17263a"/>
+<path d="M202 228h75M290 228h75M270 228h18" stroke="#17263a" stroke-width="22" stroke-linecap="round"/>
+<rect x="400" y="205" width="420" height="460" rx="105" fill="url(#coat2)"/>
+<circle cx="608" cy="154" r="112" fill="#d99a78"/>
+<path d="M486 105c62-79 197-71 250 15l-30 63H489z" fill="#273143"/>
+<rect x="560" y="66" width="96" height="48" rx="24" fill="#fff"/>
+<text x="608" y="97" font-size="22" font-family="Arial" text-anchor="middle" fill="#17263a" font-weight="700">NY</text>
+<path d="M560 162h38M618 162h38M598 162h20" stroke="#17263a" stroke-width="16" stroke-linecap="round"/>
+<path d="M500 274h215" stroke="#fff" stroke-width="10" opacity=".35"/>
+</svg>

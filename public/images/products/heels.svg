@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700">
+<defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fff7ef"/><stop offset="1" stop-color="#f2d5c5"/></linearGradient><linearGradient id="shoe" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#f3a9b6"/><stop offset="1" stop-color="#d95e7d"/></linearGradient></defs>
+<rect width="700" height="700" rx="60" fill="url(#bg)"/><ellipse cx="360" cy="590" rx="220" ry="28" fill="#caa894" opacity=".23"/>
+<path d="M115 400c76-4 136 4 184 35l148 96c23 15 48 22 82 22v47H167c-43 0-69-25-69-62 0-38 8-77 17-138z" fill="url(#shoe)" stroke="#5b2538" stroke-width="18"/>
+<path d="M366 531c12-67 39-117 91-164 8-8 24-6 29 5 14 31 25 69 25 106v75" fill="none" stroke="#5b2538" stroke-width="18" stroke-linecap="round"/>
+<path d="M179 450c52 18 94 28 126 28" stroke="#fbe4ea" stroke-width="12" opacity=".75" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700">
+<defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fff8f1"/><stop offset="1" stop-color="#eadfd8"/></linearGradient><linearGradient id="shoe" x1="0" x2="1"><stop stop-color="#ffffff"/><stop offset="1" stop-color="#dfe7ef"/></linearGradient></defs>
+<rect width="700" height="700" rx="60" fill="url(#bg)"/><ellipse cx="360" cy="595" rx="240" ry="30" fill="#b9aaa0" opacity=".22"/>
+<path d="M120 430c68-5 105-43 133-106l41-95c11-26 37-38 62-29l94 35 44 82 107 52c24 12 38 33 38 60v55H166c-50 0-78-20-78-53 0-1 9-1 32-1z" fill="url(#shoe)" stroke="#263447" stroke-width="18" stroke-linejoin="round"/>
+<path d="M245 270l90 90M286 244l99 94M326 232l95 86" stroke="#19b8e5" stroke-width="15" stroke-linecap="round"/>
+<path d="M117 485h519" stroke="#17263a" stroke-width="18" stroke-linecap="round"/>
+<path d="M449 270l-55-20" stroke="#17263a" stroke-width="18" stroke-linecap="round"/>
+</svg>
