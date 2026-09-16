@@ -136,10 +136,108 @@ export default async function ProductPage({
         </h2>
 
         <p className="mt-4 max-w-3xl text-sm leading-8 text-slate-600">
-          این بخش محل توضیحات کامل محصول است. در ادامه اطلاعات
-          واقعی محصول، جنس، نحوه نگهداری، جدول سایزبندی و سایر
-          ویژگی‌ها را از دیتابیس دریافت خواهیم کرد.
+          {product.description}
         </p>
+      </section>
+
+      {/* Features + Shipping */}
+      <section className="mt-10 grid gap-6 border-t border-[#eadbd1] pt-8 md:grid-cols-2">
+        <div className="rounded-[24px] bg-white p-6 shadow-sm">
+          <h2 className="text-lg font-black">
+            ویژگی‌های محصول
+          </h2>
+
+          <ul className="mt-5 grid gap-3">
+            {product.features.map((feature) => (
+              <li
+                key={feature}
+                className="flex items-center gap-3 text-sm text-slate-600"
+              >
+                <span className="grid h-7 w-7 place-items-center rounded-full bg-[#ffe5ee] text-xs text-[#f21f73]">
+                  ✓
+                </span>
+
+                {feature}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="rounded-[24px] bg-white p-6 shadow-sm">
+          <h2 className="text-lg font-black">
+            ارسال و بازگشت
+          </h2>
+
+          <div className="mt-5 grid gap-4">
+            <div>
+              <div className="font-bold">🚚 ارسال سریع</div>
+
+              <p className="mt-1 text-sm leading-7 text-slate-500">
+                سفارش شما پس از تأیید آماده ارسال خواهد شد.
+              </p>
+            </div>
+
+            <div>
+              <div className="font-bold">↩️ ضمانت بازگشت</div>
+
+              <p className="mt-1 text-sm leading-7 text-slate-500">
+                شرایط بازگشت محصول در بخش قوانین فروشگاه قرار می‌گیرد.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Related Products */}
+      <section className="mt-12 border-t border-[#eadbd1] pt-8">
+        <div className="mb-5 flex items-end justify-between">
+          <div>
+            <p className="text-sm font-bold text-[#f21f73]">
+              شاید این‌ها را هم بپسندید
+            </p>
+
+            <h2 className="mt-1 text-2xl font-black">
+              محصولات پیشنهادی
+            </h2>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4">
+          {products
+            .filter((_, index) => index !== productIndex)
+            .slice(0, 4)
+            .map((item) => (
+              <Link
+                key={item.name}
+                href={`/products/${products.indexOf(item)}`}
+                className="group"
+              >
+              
+                <div className="overflow-hidden rounded-[24px] border border-[#efdfd5] bg-white p-2 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                  <div className="aspect-square overflow-hidden rounded-[19px] bg-[#fff5ed]">
+                    <img
+                      src={item.image}
+                      alt={item.name}
+                      className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                    />
+                  </div>
+
+                  <div className="p-3">
+                    <h3 className="text-sm font-black">
+                      {item.name}
+                    </h3>
+
+                    <p className="mt-1 text-[10px] text-slate-500">
+                      {item.category}
+                    </p>
+
+                    <div className="mt-3 text-sm font-black">
+                      {item.price} تومان
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            ))}
+        </div>
       </section>
     </main>
   );

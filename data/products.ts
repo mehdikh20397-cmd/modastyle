@@ -1,8 +1,98 @@
 export const products = [
-  { name: "عینک آفتابی مردانه", category: "مدل کلاسیک UV400", price: "۱,۲۵۰,۰۰۰", oldPrice: "۱,۴۹۰,۰۰۰", badge: "پرفروش", image: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=700&q=85" },
-  { name: "ساعت مچی مردانه", category: "ضد آب | بند چرمی", price: "۲,۹۹۰,۰۰۰", oldPrice: "", badge: "پیشنهاد ویژه", image: "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=700&q=85" },
-  { name: "کفش پاشنه‌بلند زنانه", category: "چرم طبیعی | راحت", price: "۲,۷۹۰,۰۰۰", oldPrice: "", badge: "جدید", image: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=700&q=85" },
-  { name: "هودی مردانه", category: "طرح مینیمال | آبی", price: "۱,۹۹۰,۰۰۰", oldPrice: "", badge: "محبوب", image: "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=700&q=85" },
-  { name: "کتانی مردانه", category: "اسپرت | سبک", price: "۲,۴۹۰,۰۰۰", oldPrice: "", badge: "تخفیف ویژه", image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=85" },
-  { name: "کیف دستی زنانه", category: "چرم مصنوعی | شیک", price: "۱,۹۹۰,۰۰۰", oldPrice: "", badge: "داغ", image: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=700&q=85" },
+  {
+    name: "عینک آفتابی مردانه",
+    category: "مدل کلاسیک UV400",
+    price: "۱,۲۵۰,۰۰۰",
+    oldPrice: "۱,۴۹۰,۰۰۰",
+    badge: "پرفروش",
+    image: "/images/products/sunglasses.svg",
+    description:
+      "عینک آفتابی با طراحی کلاسیک و سبک، مناسب استفاده روزمره و استایل شهری. فریم مقاوم و لنز با محافظت UV400.",
+    features: [
+      "محافظت UV400",
+      "فریم سبک و مقاوم",
+      "طراحی مناسب استفاده روزمره",
+      "مناسب استایل کژوال و رسمی",
+    ],
+  },
+  {
+    name: "ساعت مچی مردانه",
+    category: "ضد آب | بند چرمی",
+    price: "۲,۹۹۰,۰۰۰",
+    oldPrice: "",
+    badge: "پیشنهاد ویژه",
+    image: "/images/products/watch.svg",
+    description:
+      "ساعت مچی با طراحی مینیمال و بند چرمی، مناسب استایل رسمی و روزمره با صفحه‌ای خوانا و طراحی مدرن.",
+    features: [
+      "بند چرمی",
+      "مقاوم در برابر پاشش آب",
+      "صفحه خوانا",
+      "طراحی مینیمال",
+    ],
+  },
+  {
+    name: "کفش پاشنه‌بلند زنانه",
+    category: "چرم طبیعی | راحت",
+    price: "۲,۷۹۰,۰۰۰",
+    oldPrice: "",
+    badge: "جدید",
+    image: "/images/products/heels.svg",
+    description:
+      "کفش پاشنه‌بلند با طراحی ظریف، مناسب مهمانی و استایل رسمی با تمرکز روی راحتی در استفاده.",
+    features: [
+      "چرم باکیفیت",
+      "طراحی ظریف",
+      "کفی راحت",
+      "مناسب استایل رسمی",
+    ],
+  },
+  {
+    name: "هودی مردانه",
+    category: "طرح مینیمال | آبی",
+    price: "۱,۹۹۰,۰۰۰",
+    oldPrice: "",
+    badge: "محبوب",
+    image: "/images/products/hoodie.svg",
+    description:
+      "هودی مینیمال با فرم راحت و مناسب استفاده روزمره، ترکیبی از راحتی و استایل مدرن.",
+    features: [
+      "فرم راحت",
+      "پارچه نرم",
+      "طراحی مینیمال",
+      "مناسب استفاده روزمره",
+    ],
+  },
+  {
+    name: "کتانی مردانه",
+    category: "اسپرت | سبک",
+    price: "۲,۴۹۰,۰۰۰",
+    oldPrice: "",
+    badge: "تخفیف ویژه",
+    image: "/images/products/sneakers.svg",
+    description:
+      "کتانی سبک و اسپرت برای استفاده روزانه و فعالیت‌های شهری با طراحی مدرن و راحت.",
+    features: [
+      "وزن سبک",
+      "کفی راحت",
+      "طراحی اسپرت",
+      "مناسب استفاده روزانه",
+    ],
+  },
+  {
+    name: "کیف دستی زنانه",
+    category: "چرم مصنوعی | شیک",
+    price: "۱,۹۹۰,۰۰۰",
+    oldPrice: "",
+    badge: "داغ",
+    image: "/images/products/handbag.svg",
+    description:
+      "کیف دستی شیک با فرم کاربردی و طراحی مینیمال؛ مناسب استفاده روزمره و استایل نیمه‌رسمی.",
+    features: [
+      "طراحی جادار",
+      "بند مقاوم",
+      "ظاهر مینیمال",
+      "مناسب استفاده روزمره",
+    ],
+  },
 ] as const;

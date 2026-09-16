@@ -1,7 +1,7 @@
 export function Footer() {
   return (
     <footer className="bg-[#101826] text-slate-300">
-      <div className="container-shop py-10 sm:py-12">
+      <div className="container-shop py-10 sm:py-12 ">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-10">
 
           {/* Brand */}
@@ -79,7 +79,7 @@ export function Footer() {
 
               <a
                 href="tel:+989373698658"
-                className="block hover:text-white"
+                className="block hover:text-white dir-rtl"
               >
                 +98 937 369 8658
               </a>
